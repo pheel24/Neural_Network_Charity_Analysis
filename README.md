@@ -1,4 +1,4 @@
-# Neural_Network_Charity_Analysis
+# Neural Network Charity Analysis
 
 ## Overview
   In this project, the goal was to optimize charitable investment for a ficticious company, AlphabetSoup. To accomplish this, a dataset containing information about over 30,000 charities was subjected to a deep learning binary classifier, to bifurcate the data into charaties worth investing in and those that are not (encoded as 1 and 0 respectively). Before training, the data was subjected to preprocessing in the form of noisy feature removal and scaling. Following compilation, training, and evaluation, the model was optimized with extra neurons, extra hidden layers, and alternative activation functions. 
@@ -33,3 +33,10 @@ Many of these were later encoded into categorical variables, leading to a greate
 
 ![Capture3](https://user-images.githubusercontent.com/95315957/171773650-6b139e4d-929b-4e29-a3a5-0b2f9063c788.PNG)
 
+Even with these extra optimization efforts however, the model did not surpass the accuracy goal of 75%, peaking at 73.3%
+
+![Capture4](https://user-images.githubusercontent.com/95315957/171773890-aad7734d-bd7d-432e-aca6-6095d3cf6b14.PNG)
+
+## Summary
+This model proved sufficent in its goal in my estimation. Using the model to buttress decisions about investment would certainly help improve the business model. While the accuracy is not high enough to simply trust the model in all cases, it could serve as a useful supplementary resource to investment decisions. 
+A gradient boosted model could do a better job of classifying this data, as it would add more forests and layers without simply adding more neurons as I did. This does come with the risk of overfitting however, which could be partially accounted for by moving the data to a database which could pipe new entries into the model in real time. 
